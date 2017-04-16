@@ -1,6 +1,7 @@
 library(shiny)
 library(twitteR)
 
+#locations data from the twitter API.
 locs <- read.table("locations.txt",header = T)
 
 #Insert your own keys here.
@@ -9,6 +10,7 @@ consumer_secret <- "consumerSecret"
 access_token <- "accesToken"
 access_secret <- "accessSecret"
 
+#Setup twitter Connection. 
 setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
 
  ui <- navbarPage(strong("Twitter Live"),windowTitle = "Live Twitter Trends",
