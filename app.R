@@ -4,10 +4,10 @@ library(twitteR)
 locs <- read.table("locations.txt",header = T)
 
 #Insert your own keys here.
-consumer_key <- "EJfvJef43wxK5SytXH9ugB1MP"
-consumer_secret <- "2KxcMOsl6LEWD9H4tXSN3csWL9ndKKK39ibJiYol3BCOKodUWm"
-access_token <- "807488357806678016-9gIqjHwDSsoNTwqDG9WN8UvoUTdgtaP"
-access_secret <- "E3PcW7hmyvlNmRwk3ZaC4rE2R09YLaM1kw0AVZs9oP6R2"
+consumer_key <- "consumerKey"
+consumer_secret <- "consumerSecret"
+access_token <- "accesToken"
+access_secret <- "accessSecret"
 
 setup_twitter_oauth(consumer_key,consumer_secret,access_token,access_secret)
 
